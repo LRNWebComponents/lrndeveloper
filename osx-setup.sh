@@ -5,6 +5,8 @@
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 cd $DIR
 
+# shortcut to lrndev cli
+echo "alias lrndev='bash ~/Documents/git/elmsln/LRNWebComponents/lrndeveloper/lrndev.sh'" >> ~/.bash_profile
 # install node
 echo 'export PATH=$HOME/local/bin:$PATH' >> ~/.bash_profile
 source ~/.bash_profile

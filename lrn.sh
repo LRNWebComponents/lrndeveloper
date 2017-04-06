@@ -17,11 +17,18 @@ cd $DIR
 # go back a level so we have all the repos in scope
 cd ../
 #test for empty vars. if empty required var -- exit
+prompt="Enter a valid element name to create such as lrn-name lrndesign-block lrnsys-code, etc: "
+project=$1
 if [ -z $1 ]; then
   lrnwarn "argument 1 is required and has to be the name of the element to make"
+  lrnwarn ""
+  read -rp "$prompt" project
+fi
+if [ -z $project ]; then
+  lrnwarn "argument 1 is required and has to be the name of the element to make"
+  lrnwarn ""
   exit 1
 fi
-project=$1
 # make the directory from our boilerplate
 cp -R lrndeveloper/boiler-plate $project
 cd $project
