@@ -1,0 +1,34 @@
+<link rel="import" href="../polymer/polymer.html">
+
+<!--
+`boiler-plate`
+A LRN element
+
+@demo demo/index.html 
+-->
+
+<dom-module id="boiler-plate">
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+    </style>
+    <h2>Hello [[prop1]]</h2>
+  </template>
+
+  <script>
+    Polymer({
+
+      is: 'boiler-plate',
+
+      properties: {
+        prop1: {
+          type: String,
+          value: 'boiler-plate',
+        },
+      },
+
+    });
+  </script>
+</dom-module>
