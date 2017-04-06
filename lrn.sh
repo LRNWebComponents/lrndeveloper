@@ -46,6 +46,7 @@ sed -ie "s/boiler-plate/${project}/g" bower.json
 rm bower.jsone
 sed -ie "s/boiler-plate/${project}/g" demo/index.html
 rm demo/index.htmle
+bower install
 # git stuff
 git init
 git remote add origin "git@github.com:LRNWebComponents/${project}.git"
