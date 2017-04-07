@@ -46,6 +46,9 @@ sed -ie "s/boiler-plate/${project}/g" bower.json
 rm bower.jsone
 sed -ie "s/boiler-plate/${project}/g" demo/index.html
 rm demo/index.htmle
+sed -ie "s/boiler-plate/${project}/g" README.md
+rm README.mde
+
 bower install
 # git stuff
 git init
