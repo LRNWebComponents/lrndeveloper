@@ -20,8 +20,8 @@ lrnwarn(){
 
 # prompt the user
 prompt="LRNDev: Type the number for what you'd like to do today: "
-items=("oops, didn't want to be here" "build a new component" "sync repos down from github" "update all existing repos" "rebuild all demo sites")
-locations=('' 'lrn.sh' 'sync-down-github.sh' 'git-pull-all.sh' 'update-all-demos.sh')
+items=("oops, didn't want to be here" "build a new component" "sync repos down from github" "pull all existing repos" "push to all existing repos" "rebuild all demo sites")
+locations=('' 'lrn.sh' 'sync-down-github.sh' 'git-pull-all.sh' 'git-push-all.sh' 'update-all-demos.sh')
 commands=('' 'sh' 'sh' 'sh' 'sh')
 
 # render the menu options
