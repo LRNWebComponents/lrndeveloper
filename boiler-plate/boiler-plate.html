@@ -4,7 +4,7 @@
 `boiler-plate`
 A LRN element
 
-@demo demo/index.html 
+@demo demo/index.html
 -->
 
 <dom-module id="boiler-plate">
@@ -14,7 +14,7 @@ A LRN element
         display: block;
       }
     </style>
-    <h2>Hello [[prop1]]</h2>
+    <h2>[[title]]</h2>
   </template>
 
   <script>
@@ -23,7 +23,7 @@ A LRN element
       is: 'boiler-plate',
 
       properties: {
-        prop1: {
+        title: {
           type: String,
           value: 'boiler-plate',
         },
