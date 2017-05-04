@@ -11,8 +11,8 @@ cd ../
 for d in */ ; do
 	# step into directory
 	cd "$d"
-	# make sure it's up to date
-	bower update
+	# make sure it's up to date and save it back to the file
+	bower update --save
     # back out so we can do it again
     cd ..
 done
