@@ -20,9 +20,9 @@ lrnwarn(){
 
 # prompt the user
 prompt="LRNDev: Type the number for what you'd like to do today: "
-items=("oops, didn't want to be here" "build a new component" "sync repos down from github" "pull all existing repos" "push to all existing repos" "rebuild all demo sites" "bower update all the things" "commit a downstream dependency and update the production build file")
-locations=('' 'lrn.sh' 'sync-down-github.sh' 'git-pull-all.sh' 'git-push-all.sh' 'update-all-demos.sh' 'bower-update-all.sh' 'lrn-build-dependency.sh')
-commands=('' 'sh' 'sh' 'sh' 'sh' 'sh' 'sh' 'sh')
+items=("oops, didn't want to be here" "build a new component" "build a one page app" "sync repos down from github" "pull all existing repos" "push to all existing repos" "rebuild all demo sites" "bower update all the things" "commit a downstream dependency and update the production build file")
+locations=('' 'lrn.sh' 'lrn-opa.sh' 'sync-down-github.sh' 'git-pull-all.sh' 'git-push-all.sh' 'update-all-demos.sh' 'bower-update-all.sh' 'lrn-build-dependency.sh')
+commands=('' 'sh' 'sh' 'sh' 'sh' 'sh' 'sh' 'sh' 'sh')
 
 # render the menu options
 menuitems() {

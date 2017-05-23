@@ -1,0 +1,34 @@
+<link rel="import" href="../../bower_components/build/build/default/build.html">
+
+<dom-module id="boiler-plate-app">
+  <template>
+    <style include="materializecss-styles"></style>
+    <style>
+      :host {
+        display: block;
+      }
+      paper-button {
+        padding: 0;
+        margin: 0;
+        min-width: 1rem;
+      }
+    </style>
+    <paper-button raised>Hello world!</paper-button>
+  </template>
+
+  <script>
+    Polymer({
+      is: 'boiler-plate-app',
+      properties: {
+      },
+      /**
+       * Simple way to convert from object to array.
+       */
+      _toArray: function(obj) {
+        return Object.keys(obj).map(function(key) {
+          return obj[key];
+        });
+      },
+    });
+  </script>
+</dom-module>

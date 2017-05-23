@@ -1,0 +1,18 @@
+{
+  "name": "boiler-plate-app",
+  "short_name": "boiler-plate-app",
+  "title": "New app",
+  "description": "A new app",
+  "start_url": "/",
+  "display": "standalone",
+  "drupal": {
+    "menu": {
+      "menu_name": "menu-elmsln-navigation",
+      "weight": 10
+    },
+    "data": {
+      "callback": "_cle_open_studio_app_gallery_data",
+      "property": "source-path"
+    }
+  }
+}
