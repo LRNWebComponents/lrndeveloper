@@ -5,7 +5,8 @@
   "dependencies": {
     "polymer": "Polymer/polymer#^1.9.1",
     "build": "LRNWebComponents/build#^0.0.1",
-    "hax-behaviors": "LRNWebComponents/hax-behaviors#^0.0.13"
+    "hax-behaviors": "LRNWebComponents/hax-behaviors#^0.0.13",
+    "paper-spinner": "PolymerElements/paper-spinner#^2.0.0"
   },
   "devDependencies": {
     "iron-component-page": "PolymerElements/iron-component-page#^1.0.0",
