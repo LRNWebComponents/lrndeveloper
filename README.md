@@ -1,12 +1,15 @@
 # lrndeveloper
-A repo for developer tools to build lrn polymer elements even faster then stock as well as helping streamline installation issues associated with dependencies on your computer to do so.
+A repo for developer tools to build lrn polymer elements even faster then stock as well as helping streamline installation issues associated with dependencies on your computer to do so. If you get any errors about permissions along the way you may need administrative permissions on your machine.
 
 ## How to use this from nothing
 copy and paste the following and it'll do everything you need to get started as a lrn developer
 `cd ~/ && mkdir -p Documents/git/elmsln/LRNWebComponents/ && cd Documents/git/elmsln/LRNWebComponents/ && curl -s https://api.github.com/orgs/LRNWebComponents/repos?per_page=200 | ruby -rubygems -e 'require "json"; JSON.load(STDIN.read).each { |repo| %x[git clone \"#{repo["html_url"]}\" ]}' && cd lrndeveloper`
 
+### Install node
+Go to https://nodejs.org/en/ and install the 6.x+ LTS release.
+
 ### (optional) I don't have polymer/bower/npm setup though
-No problem, we have a one-line for fixing this
+No problem, there's a one liner for that
 `cd ~/Documents/git/elmsln/LRNWebComponents/lrndeveloper && sudo sh osx-setup.sh`
 
 ## shortcut for lrndev cli
