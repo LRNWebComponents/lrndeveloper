@@ -1,5 +1,5 @@
 {
     "scripts": {
-        "postinstall": "npm run post-install"
+        // "postinstall": "npm run post-install"
     }
 }
