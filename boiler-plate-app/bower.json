@@ -17,6 +17,7 @@
   },
   "resolutions": {
     "lrndesign-avatar": "^0.0.3",
-    "paper-card": "^1.1.6"
+    "paper-card": "^1.1.6",
+    "webcomponentsjs": "^0.7.0"
   }
 }
