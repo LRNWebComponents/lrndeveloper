@@ -4,10 +4,10 @@
   "main": "boiler-plate-app.html",
   "dependencies": {
     "polymer": "Polymer/polymer#^1.9.1",
-    "build": "LRNWebComponents/build#^0.0.1",
+    "build": "LRNWebComponents/build#^0.0.5",
     "hax-behaviors": "LRNWebComponents/hax-behaviors#^0.0.13",
-    "paper-spinner": "PolymerElements/paper-spinner#^2.0.0",
-    "paper-tooltip": "PolymerElements/paper-tooltip#^2.0.0"
+    "paper-spinner": "PolymerElements/paper-spinner#^1.2.1",
+    "paper-tooltip": "PolymerElements/paper-tooltip#^1.1.4"
   },
   "devDependencies": {
     "iron-component-page": "PolymerElements/iron-component-page#^1.0.0",
