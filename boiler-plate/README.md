@@ -1,3 +1,19 @@
+<!--
+```
+<custom-element-demo>
+  <template>
+    <link rel="import" href="boiler-plate.html">
+    <next-code-block></next-code-block>
+  </template>
+</custom-element-demo>
+```
+-->
+```html
+<boiler-plate></boiler-plate>
+```
+
+[![Published on webcomponents.org](https://img.shields.io/badge/webcomponents.org-published-blue.svg)](https://www.webcomponents.org/element/LRNWebComponents/boiler-plate)
+
 # \<boiler-plate\>
 
 A LRN element
