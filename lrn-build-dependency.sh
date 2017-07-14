@@ -44,7 +44,7 @@ fi
 git tag $tag
 git push origin $tag
 # update demo to match
-bash update-demo.sh
+sh update-demo.sh
 # move into the build directory
 cd ../build
 # install which will then update to this tag
@@ -57,11 +57,26 @@ cd build/default
 vulcanize index.html > build.html
 # move back to root of build repo
 cd ../..
+cp -R components-to-copy/ build/default/bower_components/
 # add all changes for this
 git add -A
 git commit -m "updated downstream $repo"
 git push origin master
+# now make change in the build for edit derivative
+# move into the build directory
+cd ../build-for-edit
+# install which will then update to this tag
+bower install --save LRNWebcomponents/$repo
+# build which will have the new item roped in
+polymer build
+# move to build directory
+cd build/default
+# smash it into 1 file
+vulcanize index.html > build.html
+# move back below the repo
+cd ../../..
 # support for updating ELMSLN copy of this
-cp build/default/build.html ~/elmsln/core/dslmcode/shared/drupal-7.x/libraries/webcomponents/polymer/LRNWebcomponents/build.html
+cp build/build/default/build.html ~/elmsln/core/dslmcode/shared/drupal-7.x/libraries/webcomponents/polymer/LRNWebcomponents/build.html
+cp build-for-edit/build/default/build.html ~/elmsln/core/dslmcode/shared/drupal-7.x/modules/elmsln_contrib/cis_connector/modules/features/elmsln_core/LRNWebComponents/build_edit.html
 
 echo "$repo as well as the LRN build file have been updated"
