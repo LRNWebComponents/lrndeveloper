@@ -16,10 +16,6 @@
         "callback": "_boiler_plate_app_data",
         "property": "source-path"
       }
-    },
-    "context": {
-      "distro": "cle",
-      "module": "boiler_plate_app"
     }
   }
 }
