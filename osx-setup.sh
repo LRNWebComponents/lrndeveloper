@@ -21,6 +21,6 @@ curl http://npmjs.org/install.sh | sh
 # install bower
 npm install -g bower
 # install polymer
-npm install -g polymer-cli@next
+npm install -g polymer-cli
 
 echo "Your system should now have nodejs, npm, bower and polymer all ready to go!"
