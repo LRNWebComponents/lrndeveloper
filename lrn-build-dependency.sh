@@ -77,6 +77,9 @@ vulcanize index.html > build.html
 cd ../../..
 # support for updating ELMSLN copy of this
 cp build/build/default/build.html ~/elmsln/core/dslmcode/shared/drupal-7.x/libraries/webcomponents/polymer/LRNWebcomponents/build.html
+cp build/build/default/push-manifest.json ~/elmsln/core/dslmcode/shared/drupal-7.x/libraries/webcomponents/polymer/LRNWebcomponents/push-manifest.json
+cp build/build/default/service-worker.js ~/elmsln/core/dslmcode/shared/drupal-7.x/libraries/webcomponents/polymer/LRNWebcomponents/service-worker.js
+
 cp build-for-edit/build/default/build.html ~/elmsln/core/dslmcode/shared/drupal-7.x/modules/elmsln_contrib/cis_connector/modules/features/elmsln_core/LRNWebComponents/build_edit.html
 
 echo "$repo as well as the LRN build file have been updated"
