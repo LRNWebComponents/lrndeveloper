@@ -41,10 +41,14 @@ cd src/${project}
 sed -ie "s/boiler-plate-app/${project}/g" "${project}.html"
 rm "${project}.htmle"
 cd ../..
-sed -ie "s/boiler-plate-app/${project}/g" bower.json
-rm bower.jsone
+sed -ie "s/boiler-plate-app/${project}/g" update-demo.sh
+rm update-demo.she
 sed -ie "s/boiler-plate-app/${project}/g" index.html
 rm index.htmle
+sed -ie "s/boiler-plate-app/${project}/g" bower.json
+rm bower.jsone
+sed -ie "s/boiler-plate-app/${project}/g" demo/index.html
+rm demo/index.htmle
 sed -ie "s/boiler-plate-app/${project}/g" README.md
 rm README.mde
 sed -ie "s/boiler-plate-app/${project}/g" manifest.json

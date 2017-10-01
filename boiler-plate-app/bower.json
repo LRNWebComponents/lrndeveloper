@@ -3,8 +3,7 @@
   "description": "A LRN app",
   "main": "boiler-plate-app.html",
   "dependencies": {
-    "polymer": "Polymer/polymer#^1.9.1",
-    "build": "LRNWebComponents/build#^0.1.4"
+    "polymer": "Polymer/polymer#^1.10.1"
   },
   "devDependencies": {
     "iron-component-page": "PolymerElements/iron-component-page#^1.0.0",
