@@ -3,9 +3,7 @@
   "description": "A LRN element",
   "main": "boiler-plate.html",
   "dependencies": {
-    "polymer": "Polymer/polymer#^1.9.3",
-    "lrnsys-behaviors": "LRNWebComponents/lrnsys-behaviors#^1.0.0",
-    "materializecss-styles": "LRNWebComponents/materializecss-styles#^0.0.5"
+    "polymer": "Polymer/polymer#^1.10.1"
   },
   "devDependencies": {
     "iron-component-page": "PolymerElements/iron-component-page#^1.0.0",
