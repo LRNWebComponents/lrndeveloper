@@ -14,7 +14,7 @@ mkdir ~/local
 mkdir ~/node-js
 cd ~/node-js
 curl http://nodejs.org/dist/node-v0.4.7.tar.gz | tar xz --strip-components=1
-./configure --prefix=~/local
+./configure --prefix=~/local --without-ssl
 make install
 # install npm
 curl http://npmjs.org/install.sh | sh
