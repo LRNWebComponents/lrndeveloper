@@ -38,14 +38,30 @@ A LRN element
         },
       },
       /**
-       * Ready.
+       * Attached to the DOM, now fire.
        */
-      ready: function() {
+      attached: function() {
         // Establish hax property binding
         let props = {
           'canScale': true,
           'canPosition': true,
           'canEditSource': false,
+          'gizmo': {
+            'title': 'Sample gizmo',
+            'description': 'The user will be able to see this for selection in a UI.',
+            'icon': 'av:play-circle-filled',
+            'color': 'grey',
+            'groups': ['Video', 'Media'],
+            'handles': [
+              {
+                'type': 'video',
+                'url': 'source'
+              }
+            ],
+            'meta': {
+              'author': 'Your organization on github'
+            }
+          },
           'settings': {
             'quick': [
               {
