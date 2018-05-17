@@ -1,6 +1,7 @@
 {
   "name": "boiler-plate-app",
   "description": "A LRN app",
+  "license": "Apache-2.0",
   "main": "boiler-plate-app.html",
   "dependencies": {
     "polymer": "Polymer/polymer#^1.10.1"
