@@ -1,5 +1,26 @@
 # LRNdeveloper
 
+## Docker workflow
+
+Install Docker from the official Docker website. Either [Docker for Mac](https://www.docker.com/docker-mac) or [Docker for Windows](https://www.docker.com/docker-windows).  Once Docker has been installed, open the application to allow it to run.
+
+Verify that you have Docker installed by running:
+```
+docker
+cd lrndeveloper
+make start
+make connect
+# from inside the docker image
+lrndev
+```
+
+Install Git from [https://git-scm.com/](https://git-scm.com/)
+
+Verify that you have Git installed by running:
+```
+git
+```
+
 Developer tools which will help you build [Polymer](https://www.polymer-project.org/)-based [LRN](https://www.webcomponents.org/author/LRNWebComponents) Components even faster, as well as streamlining installation issues associated with dependencies on your computer. If you get any errors about permissions along the way you may need administrative permissions on your machine.
 
 ## How to use this from scratch
