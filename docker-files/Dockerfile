@@ -18,4 +18,5 @@ WORKDIR /home/node/html
 USER root
 RUN chown node:node /home/node/html
 USER node
+CMD [ "polymer", "serve", "-H", "0.0.0.0", "-p", "8081" ]
 EXPOSE 8081
