@@ -54,4 +54,4 @@ bower install
 git init
 lrnecho "Happy coding!"
 # last step, serve it up!
-polymer serve --open
+polymer serve -H 0.0.0.0 -p 8081 --open
