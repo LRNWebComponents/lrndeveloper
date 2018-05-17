@@ -57,8 +57,6 @@ rm manifest.jsone
 bower install
 # git stuff
 git init
-git add -A
-git commit -m "Initial commit of ${project} app"
 lrnecho "Happy coding!"
 # last step, serve it up!
 polymer serve --open
