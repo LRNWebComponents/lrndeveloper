@@ -57,12 +57,8 @@ rm manifest.jsone
 bower install
 # git stuff
 git init
-git remote add origin "git@github.com:LRNWebComponents/${project}.git"
 git add -A
 git commit -m "Initial commit of ${project} app"
-# this part will probably fail
-git push origin master
-lrnecho "if the previously step failed then go to https://github.com/organizations/LRNWebComponents/repositories/new and add a repo called ${project}"
-lrnecho "enjoy your new app!"
+lrnecho "Happy coding!"
 # last step, serve it up!
 polymer serve --open
