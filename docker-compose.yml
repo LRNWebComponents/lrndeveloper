@@ -6,4 +6,4 @@ services:
       - ./docker-files:/home/node/html
       - ./docker-files/Dockerfile:/home/node/html/Dockerfile:ro
     ports:
-      - '8084:8081'
+      - '8081:8081'

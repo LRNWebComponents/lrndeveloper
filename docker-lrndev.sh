@@ -20,9 +20,9 @@ lrnwarn(){
 
 # prompt the user
 prompt="LRNDev: Type the number for what you'd like to do today: "
-items=("oops, didn't want to be here" "build a new component" "build a one page app")
-locations=('' 'docker-lrn.sh' 'docker-lrn-opa.sh')
-commands=('' 'sh' 'sh')
+items=("oops, didn't want to be here" "build a new component" "build a one page app" "serve the files for an element")
+locations=('' 'docker-lrn.sh' 'docker-lrn-opa.sh' 'serve -H 0.0.0.0 -p 8081 --open')
+commands=('' 'sh' 'sh' 'polymer')
 
 # render the menu options
 menuitems() {
