@@ -76,3 +76,29 @@ This script will:
 From here, it's your responsibility to build something awesome for education. Make us great!
 
 Looking for a demo? Please check out this [YouTube video](https://www.youtube.com/watch?v=P-ZA4CQASpY&t=2119s) to see this tool in action.
+
+## Using Docker
+
+Build Image
+
+```
+$ docker build -t lrndeveloper .
+```
+
+Start Container
+
+```
+$ docker run -it --rm -v $(pwd):/home/node/html lrndeveloper bash
+```
+
+Serve From Container
+
+```
+$ docker run -it --rm -v $(pwd):/home/node/html -p 8081:8081 lrndeveloper
+```
+
+If Docker says that an existing port is already taken then stop all other containers.
+
+```
+$ docker stop $(docker ps -a -q)
+```
