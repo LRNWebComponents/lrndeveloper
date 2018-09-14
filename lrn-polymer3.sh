@@ -29,7 +29,7 @@ fi
 
 cd $project
 # convert it initially which assumes this is the start of the 3.0.0 version
-modulizer --out . --npm-name @lrnwebcomponents/${project} --npm-version 3.0.0 --force
+modulizer --out . --npm-name @lrnwebcomponents/${project} --npm-version 3.0.0 --force --import-style=name
 git checkout -b 3.x.x
 git add -A
 git commit -m "initial commit to 3.x.x branch"
