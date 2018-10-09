@@ -27,17 +27,27 @@ if [ -z $project ]; then
   exit 1
 fi
 
-cd $project
-# convert it initially which assumes this is the start of the 3.0.0 version
-modulizer --out . --npm-name @lrnwebcomponents/${project} --npm-version 3.0.0 --force --import-style=name
-git checkout -b 3.x.x
+# execute the wcf command of much happiness, specific to me but meh
+wcf element --name=${project} --description="Automated conversion of ${project}" --factory=/Users/bto108/Documents/git/elmsln/company/factories/lrnwebcomponents --customElementTemplate=Polymer --no-useSass --no-addProps --useHAX
+# add a library directory since we'll use this for multiple elements in a repo
+mkdir -p company/factories/lrnwebcomponents/elements/${project}/lib
+# now upgrade the module
+cd ../lrnwebcomponents/${project}
+# requirement from docs
+bower install
+# convert it initially which assumes this is the start of the 0.0.1 version, lerna will correct this
+modulizer --out ../../company/factories/lrnwebcomponents/elements/${project}/lib --npm-name @lrnwebcomponents/${project} --npm-version 0.0.1 --force --import-style name
+# move back over to monorepo and commit
+cd ../../company/factories/lrnwebcomponents/
 git add -A
-git commit -m "initial commit to 3.x.x branch"
-git push origin 3.x.x
-# now work on component factory
-cd ../componentFactory/elements
-yo --no-insight --no-update-notifier rhelement ${project}
-npm run test-suite-inject
-npm run bootstrap
-rm ${project}/src/${project}.js
-cp ../../${project}/${project}.js ${project}/src/${project}.js
+git commit -m "automated modulizer starting point for ${project}"
+lrnwarn "Next steps:"
+lrnecho "cd /Users/bto108/Documents/git/elmsln/company/factories/lrnwebcomponents/${project}"
+lrnecho "1. manually resolve lib/package.json dependencies"
+lrnecho "2. delete lib/test/"
+lrnecho "3. delete lib/index.html"
+lrnecho "4. resolve lib/${project}.js with src/${project}.js"
+lrnecho "5. optional: add in tooling line as needed for hax, html and properties as it makes sense"
+lrnecho "6. optional: upgrade from Polymer 1.x.x global object methodology to OOP methodology"
+lrnecho "7. yarn run dev and resolve issues"
+lrnecho "8. yarn run build"
